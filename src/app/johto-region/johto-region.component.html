@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <main>
+    <h1>JOHTO GYM</h1>
+    <div class="status-box">
+      {{message()}}
+    </div>
+    <div class="card-grid">
+        @for(leader of leaders; track leader.name){
+        <div class="card">
+            <app-leader-info
+            [name] = "leader.name"
+            [badge] = "leader.badge"
+            [location] = "leader.location"
+            [age] = "leader.age"
+            [description] = "leader.description"
+            [team] = "leader.team"
+            [dialogue] = "leader.dialogue"
+            (onDialogue)=
+            "onLeaderDia($event)" 
+            />  
+        </div>
+      }
+    </div>
+  </main>
+</body>
+</html>
