@@ -1,2 +1,22 @@
-<p>home works!</p>
-<h1>THIS SHOULD REFLECT</h1>
+<p>Welcome!</p>
+<h1>Here are the lists of Leaders</h1>
+<h2>Johto</h2>
+<div class="card-grid">
+        @for(leader of leadersjohto; track leader.name){
+        <div class="card">
+            <app-home-info
+            [name] = "leader.name"
+            />  
+        </div>
+      }
+    </div>
+<h2>Kanto</h2>
+<div class="card-grid">
+        @for(leader of leaderskanto; track leader.name){
+        <div class="card">
+            <app-home-info
+            [name] = "leader.name"
+            />  
+        </div>
+      }
+    </div>
