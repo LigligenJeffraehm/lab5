@@ -1,22 +1,32 @@
-<p>Welcome!</p>
-<h1>Here are the lists of Leaders</h1>
 <h2>Johto</h2>
+<p>Pokémon Gym Leaders are trainers who run special Gyms across different regions. Each one focuses on a certain type of Pokémon and challenges players to test their skills. When defeated, they award a badge that marks progress on the journey to becoming a Pokémon Champion.</p>
+<h3>Here are the lists of Leaders</h3>
 <div class="card-grid">
-        @for(leader of leadersjohto; track leader.name){
-        <div class="card">
-            <app-home-info
-            [name] = "leader.name"
-            />  
-        </div>
-      }
+  @for(leader of leadersjohto; track leader.name){
+    <div class="card">
+      <app-home-info
+        [name] = "leader.name"
+        />  
     </div>
+  }
+</div>
 <h2>Kanto</h2>
 <div class="card-grid">
-        @for(leader of leaderskanto; track leader.name){
+  @for(leader of leaderskanto; track leader.name){
+    <div class="card">
+      <app-home-info
+        [name] = "leader.name"
+          />  
+</div>
+      }
+</div>
+<h2>Hoenn</h2>
+<div class="card-grid">
+  @for(leader of leadershoenn; track leader.name){
         <div class="card">
             <app-home-info
             [name] = "leader.name"
             />  
         </div>
       }
-    </div>
+</div>

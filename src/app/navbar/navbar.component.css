@@ -3,3 +3,40 @@
     font-weight: bold;
     color:rgb(231, 19, 19);
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222020; /* dark blue-gray */
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ecf0f1; /* light gray */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f39c12; /* golden hover */
+}
+
+.active-link {
+  border-bottom: 2px solid #f39c12; /* highlight active */
+  padding-bottom: 2px;
+}

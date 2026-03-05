@@ -1,0 +1,31 @@
+<h1>HOENN GYM</h1>
+<div class="card-grid">
+    @for(trainer of trainerService.hoennLeaders(); track trainer.name){
+        <div class="card">
+            <h2>Trainer: {{trainer.name}}</h2>
+            <h4>Badge: {{trainer.badge}}</h4>
+            <h4>Town: {{trainer.town}}</h4>
+            <h4>Specialty: {{trainer.specialty}}</h4>
+            <ul>
+                @for(pokemon of trainer.team; track $index){
+                    <li>
+                        <strong>{{pokemon}}</strong> - 
+                        <small>Held Item: {{trainer.items[$index]}}</small>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

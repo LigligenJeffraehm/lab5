@@ -28,4 +28,14 @@ leaderskanto =[
   {name:'Blaine'},
   {name:'Giovanni'},
 ];
+leadershoenn =[
+  {name: 'Roxanne'},
+  {name: 'Brawly'},
+  {name: 'Wattson'},
+  {name: 'Flannery'},
+  {name: 'Norman'},
+  {name: 'Winona'},
+  {name: 'Tate & Liza'},
+  {name: 'Juan'}
+];
 }
